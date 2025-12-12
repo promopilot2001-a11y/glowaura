@@ -1,382 +1,44 @@
-# GlowAura Candles — Full Brand Kit & Zero‑Budget Website
-
-**Ready-made brand** for Gen‑Z buyers. This single document includes:
-
-* Brand name, tagline, voice and visuals
-* 6 product listings (names, descriptions, prices, scent profiles, mock image prompts)
-* SEO meta tags, favicon idea
-* Single-file responsive website (HTML + Tailwind Play CDN + JS local cart)
-* Step‑by‑step zero‑budget deployment: GitHub Pages & Netlify
-* Social media kit: Instagram captions, 3 Reels scripts, hashtag bundles
-* Email/newsletter copy, FAQ, sample policies (shipping/returns)
-
----
-
-## Brand Identity
-
-**Brand name:** GlowAura Candles
-
-**Tagline:** Light your vibe. Glow your aura.
-
-**Brand voice:** Friendly, concise, slightly playful, socially conscious, and visually aesthetic. Use short sentences, emoji sparingly, and callouts like **Limited Drop** or **Fresh Batch**.
-
-**Target audience:** Gen‑Z (18–24) who value sustainability, aesthetics, and social media-ready products.
-
-**Visual style:** Pastel palette (lavender, mint, peach), minimal layouts, soft glow accents, playful rounded type. Use large product shots and Instagram‑style cards.
-
-**Colors (hex):**
-
-* Pastel Lavender: `#E8DAFF`
-* Mint: `#D8FFF2`
-* Peach: `#FFE8D6`
-* Charcoal (text): `#222222`
-* Soft Glow (accent): `#FFF6E6`
-
-**Fonts:** Use system stack or Google Fonts: `Poppins` (headings), `Inter` (body). Free to use.
-
-**Logo idea:** Simple wordmark with a small soft‑glow candle icon. For a no‑budget logo, use Canva free or a free logo maker and download PNG. Suggested logotype: `GlowAura` with a stylized flame over the second "o".
-
----
-
-## Product Catalog (6 items)
-
-Each entry includes: name, short description, benefits, scent profile, price (INR), SKU, and an AI prompt for a free mockup.
-
-1. **Moonlit Matcha — Ceramic Jar (180g)**
-
-* **Price:** ₹449
-* **Description:** Smooth green‑tea notes with creamy oat milk undertones. Eco ceramic jar, slow burn ~30 hrs.
-* **Benefits:** Calming, focus booster, great for study sessions.
-* **Scent profile:** Matcha, creamy oats, white musk.
-* **SKU:** GA‑MM‑180
-* **AI mockup prompt:** "Photorealistic pastel product shot of a small ceramic candle jar labeled 'Moonlit Matcha' on a pastel mint background, soft natural lighting, minimal props, top view and 45‑degree angle, Gen‑Z aesthetic."
-
-2. **Peachy Polaroid — Recycled Glass (160g)**
-
-* **Price:** ₹399
-* **Description:** Juicy peach top notes with clean cotton base. Perfect for fresh, cosy rooms.
-* **Benefits:** Uplifting, brightens mood.
-* **Scent profile:** Peach, cotton, light vanilla.
-* **SKU:** GA‑PP‑160
-* **AI mockup prompt:** "Lifestyle shot of a peach scented candle in recycled glass on a wooden bedside table with polaroid photos, soft peach pastel lighting, intimate Gen‑Z vibe."
-
-3. **Midnight Coconut — Tin Travel Candle (120g)**
-
-* **Price:** ₹299
-* **Description:** Tropical coconut with a hint of sea salt. Portable tin — carry the vibe anywhere.
-* **Benefits:** Relaxing, beachy nostalgia.
-* **Scent profile:** Coconut, sea salt, driftwood.
-* **SKU:** GA‑MC‑120
-* **AI mockup prompt:** "Small tin candle labelled 'Midnight Coconut' on a textured sandy background with seashell and folded polaroid, moody twilight lighting, Gen Z travel aesthetic."
-
-4. **Lavender Lyric — Matte Jar (200g)**
-
-* **Price:** ₹499
-* **Description:** Classic calming lavender blended with eucalyptus for dreamy sleep.
-* **Benefits:** Sleep aid, stress relief.
-* **Scent profile:** Lavender, eucalyptus, cedar.
-* **SKU:** GA‑LL‑200
-* **AI mockup prompt:** "Cozy bedroom scene with lavender candle on bedside table, soft glowing light, knitted blanket, late night aesthetic, 'GlowAura' label visible."
-
-5. **Cafe Caramel — Amber Jar (180g)**
-
-* **Price:** ₹459
-* **Description:** Warm espresso and salted caramel — like your fave coffee shop at home.
-* **Benefits:** Mood lift, comfort.
-* **Scent profile:** Espresso, caramel, toasted sugar.
-* **SKU:** GA‑CC‑180
-* **AI mockup prompt:** "Amber jar candle on a cafe table with croissant and vintage camera, warm tones, inviting atmosphere, lifestyle product shot."
-
-6. **Forest Whisper — Soy Block (220g)**
-
-* **Price:** ₹549
-* **Description:** Earthy pine with green moss and a whisper of citrus for fresh focus.
-* **Benefits:** Grounding, clarity.
-* **Scent profile:** Pine, moss, bergamot.
-* **SKU:** GA‑FW‑220
-* **AI mockup prompt:** "Minimal product shot of block soy candle named 'Forest Whisper' on stone slab with pine sprigs, natural outdoorsy Gen‑Z look."
-
----
-
-## Zero‑Budget AI Image Strategy
-
-Use free text‑to‑image tools (Craiyon, Hugging Face free models, or Midjourney trial if available). Use the prompts above and request PNG with transparent background if possible. If you need free high quality images, use Canva free mockups and place generated images into a pastel frame.
-
----
-
-## SEO Meta Tags (copy into <head>)
-
-```html
-<meta name="description" content="GlowAura Candles — Gen‑Z friendly, eco‑aware candles. Pastel aesthetic, cruelty‑free soy blends, free shipping on first drop. Light your vibe.">
-<meta name="keywords" content="sustainable candles, Gen Z candles, soy candles India, aesthetic candles, GlowAura">
-<meta property="og:title" content="GlowAura Candles - Light your vibe" />
-<meta property="og:description" content="Eco‑friendly scented candles made for your aesthetic. Shop Moonlit Matcha, Lavender Lyric & more." />
-<meta property="og:image" content="/path/to/og-image.png" />
-<meta name="twitter:card" content="summary_large_image" />
-```
-
----
-
-## Single‑file Website (HTML + Tailwind Play CDN + JS)
-
-Below is a single `index.html` you can copy, paste, and host (GitHub Pages / Netlify). It uses Tailwind Play CDN so no build step is needed.
-
-```html
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>GlowAura Candles — Light your vibe</title>
-  <!-- Tailwind Play CDN for zero-build quick sites -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>GlowAura Candles</title>
   <script src="https://cdn.tailwindcss.com"></script>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
-  <style>
-    body { font-family: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial; }
-    .glow { box-shadow: 0 8px 30px rgba(255,230,200,0.18); }
-  </style>
 </head>
-<body class="bg-[#FFF6E6] text-[#222]">
-  <header class="max-w-4xl mx-auto p-6 flex items-center justify-between">
-    <div class="flex items-center gap-3">
-      <div class="w-10 h-10 rounded-full bg-white flex items-center justify-center glow">
-        <!-- simple candle icon -->
-        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 2c1.1 1.6 2 2.8 2 4 0 1.9-1.5 3.5-3.5 3.5S7 7.9 7 6c0-1.2.9-2.4 2-4 0 0 .7.5 3 0z" fill="#FFD8A8"/><rect x="9" y="8" width="6" height="12" rx="3" fill="#FFF" stroke="#EED"/></svg>
-      </div>
-      <div>
-        <h1 class="text-2xl font-bold" style="font-family:Poppins">GlowAura</h1>
-        <p class="text-xs -mt-1">Light your vibe. Glow your aura.</p>
-      </div>
-    </div>
-    <nav class="hidden md:flex gap-6 items-center">
-      <a href="#products" class="text-sm">Shop</a>
-      <a href="#about" class="text-sm">About</a>
-      <a href="#contact" class="text-sm">Contact</a>
-      <button id="cartBtn" class="bg-[#FFE8D6] px-3 py-1 rounded shadow">Cart (<span id="cartCount">0</span>)</button>
-    </nav>
+
+<body class="bg-[#FFF6E6] text-[#222222]">
+  <header class="p-6 text-center">
+    <h1 class="text-4xl font-bold">GlowAura Candles</h1>
+    <p class="text-lg mt-2">Light your vibe. Glow your aura.</p>
   </header>
 
-  <main class="max-w-4xl mx-auto p-6">
-    <!-- Hero -->
-    <section class="grid md:grid-cols-2 gap-6 items-center mb-8">
-      <div>
-        <h2 class="text-4xl font-bold mb-3" style="font-family:Poppins">Candles made for your mood.</h2>
-        <p class="mb-4">Sustainable, Gen‑Z aesthetic candles crafted with care. Minimal packaging. Max vibe.</p>
-        <a href="#products" class="inline-block px-6 py-2 bg-[#E8DAFF] rounded font-medium">Shop the Drop</a>
+  <section class="p-6">
+    <h2 class="text-2xl font-semibold mb-4">Our Candles</h2>
+
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+
+      <div class="bg-white p-4 rounded-xl shadow">
+        <h3 class="text-xl font-bold">Moonlit Matcha</h3>
+        <p class="text-sm">Smooth green tea + creamy oat milk. Slow burn ~30 hrs.</p>
+        <p class="font-semibold mt-2">₹449</p>
       </div>
-      <div class="bg-white rounded-lg p-6 glow">
-        <img src="https://via.placeholder.com/400x300.png?text=GlowAura+Hero" alt="hero" class="w-full rounded"/>
+
+      <div class="bg-white p-4 rounded-xl shadow">
+        <h3 class="text-xl font-bold">Peachy Polaroid</h3>
+        <p class="text-sm">Juicy peach + clean cotton. Cozy room freshness.</p>
+        <p class="font-semibold mt-2">₹399</p>
       </div>
-    </section>
 
-    <!-- Products -->
-    <section id="products">
-      <h3 class="text-2xl font-semibold mb-4">Our Candles</h3>
-      <div class="grid sm:grid-cols-2 gap-4">
-        <!-- Product Card Template -->
+      <div class="bg-white p-4 rounded-xl shadow">
+        <h3 class="text-xl font-bold">Midnight Coconut</h3>
+        <p class="text-sm">Coconut + sea salt. Portable tin vibes.</p>
+        <p class="font-semibold mt-2">₹299</p>
       </div>
-    </section>
 
-    <!-- About -->
-    <section id="about" class="mt-8 bg-white p-6 rounded glow">
-      <h4 class="text-xl font-semibold">Why GlowAura?</h4>
-      <p class="mt-2">We craft small‑batch candles from soy and recycled containers. Minimal waste. Big vibes.</p>
-      <ul class="mt-3 list-disc pl-5">
-        <li>Eco materials</li>
-        <li>Vegan wax</li>
-        <li>Instagram-ready packaging</li>
-      </ul>
-    </section>
-
-    <!-- Contact -->
-    <section id="contact" class="mt-6">
-      <h4 class="text-lg font-semibold">Contact</h4>
-      <p class="text-sm mt-2">Email: hello@glowaura.example (replace with real email)</p>
-      <form id="contactForm" class="mt-3 grid gap-2 sm:grid-cols-2">
-        <input name="name" placeholder="Your name" class="p-2 border rounded" />
-        <input name="email" placeholder="Email" class="p-2 border rounded" />
-        <textarea name="message" placeholder="Message" class="p-2 border rounded sm:col-span-2"></textarea>
-        <button type="submit" class="bg-[#D8FFF2] p-2 rounded sm:col-span-2">Send</button>
-      </form>
-    </section>
-
-  </main>
-
-  <!-- Cart Modal -->
-  <div id="cartModal" class="fixed inset-0 bg-black/40 hidden items-center justify-center p-4">
-    <div class="bg-white rounded-lg p-4 w-full max-w-lg">
-      <h5 class="font-semibold">Your Cart</h5>
-      <div id="cartItems" class="mt-3"></div>
-      <div class="mt-3 flex items-center justify-between">
-        <div>Total: ₹<span id="cartTotal">0</span></div>
-        <div>
-          <button id="checkout" class="px-3 py-1 bg-[#E8DAFF] rounded">Checkout</button>
-          <button id="closeCart" class="ml-2 px-3 py-1 border rounded">Close</button>
-        </div>
-      </div>
     </div>
-  </div>
-
-  <footer class="max-w-4xl mx-auto p-6 text-center text-sm">
-    © GlowAura — Made with care. Small batches. ✨
-  </footer>
-
-  <script>
-    // Product data (same as brand catalog)
-    const products = [
-      {id:'GA-MM-180', name:'Moonlit Matcha', price:449, img:'https://via.placeholder.com/400x300?text=Moonlit+Matcha', desc:'Matcha + creamy oats — calming study candle.'},
-      {id:'GA-PP-160', name:'Peachy Polaroid', price:399, img:'https://via.placeholder.com/400x300?text=Peachy+Polaroid', desc:'Juicy peach & cotton — bright mood.'},
-      {id:'GA-MC-120', name:'Midnight Coconut', price:299, img:'https://via.placeholder.com/400x300?text=Midnight+Coconut', desc:'Coconut + sea salt — portable beach vibe.'},
-      {id:'GA-LL-200', name:'Lavender Lyric', price:499, img:'https://via.placeholder.com/400x300?text=Lavender+Lyric', desc:'Lavender + eucalyptus — dreamy sleep.'},
-      {id:'GA-CC-180', name:'Cafe Caramel', price:459, img:'https://via.placeholder.com/400x300?text=Cafe+Caramel', desc:'Espresso + caramel — cozy cafe mood.'},
-      {id:'GA-FW-220', name:'Forest Whisper', price:549, img:'https://via.placeholder.com/400x300?text=Forest+Whisper', desc:'Pine + moss — grounding clarity.'}
-    ];
-
-    // render product cards
-    const grid = document.querySelector('#products > div');
-    products.forEach(p=>{
-      const card = document.createElement('div');
-      card.className='bg-white rounded p-3 flex gap-3 items-center';
-      card.innerHTML = `
-        <img src="${p.img}" class="w-28 h-20 object-cover rounded" />
-        <div class="flex-1">
-          <div class="flex items-center justify-between">
-            <div>
-              <div class="font-semibold">${p.name}</div>
-              <div class="text-xs text-slate-600">${p.desc}</div>
-            </div>
-            <div class="text-sm">₹${p.price}</div>
-          </div>
-          <div class="mt-2 flex gap-2">
-            <button class="addBtn px-3 py-1 border rounded" data-id="${p.id}">Add</button>
-            <button class="buyBtn px-3 py-1 bg-[#FFE8D6] rounded" data-id="${p.id}">Buy</button>
-          </div>
-        </div>
-      `;
-      grid.appendChild(card);
-    });
-
-    // cart logic (localStorage)
-    const cartKey='glowaura_cart_v1';
-    function getCart(){return JSON.parse(localStorage.getItem(cartKey)||'[]');}
-    function saveCart(c){localStorage.setItem(cartKey,JSON.stringify(c));}
-    function cartCount(){return getCart().reduce((s,i)=>s+i.qty,0);}
-    function cartTotal(){return getCart().reduce((s,i)=>s+i.qty*i.price,0);}
-    function updateCartUI(){document.getElementById('cartCount').innerText=cartCount();}
-    updateCartUI();
-
-    document.addEventListener('click', (e)=>{
-      if(e.target.matches('.addBtn')){ const id=e.target.dataset.id; addToCart(id,1); }
-      if(e.target.matches('.buyBtn')){ const id=e.target.dataset.id; addToCart(id,1); openCart(); }
-      if(e.target.id==='cartBtn') openCart();
-      if(e.target.id==='closeCart') closeCart();
-      if(e.target.id==='checkout') alert('Checkout:\nCopy your order details and contact us at hello@glowaura.example');
-    });
-
-    function addToCart(id, qty){ const p=products.find(x=>x.id===id); const cart=getCart(); const found=cart.find(i=>i.id===id); if(found){found.qty+=qty;}else{cart.push({id:p.id,name:p.name,price:p.price,qty:qty});} saveCart(cart); updateCartUI(); }
-
-    function openCart(){ document.getElementById('cartModal').classList.remove('hidden'); renderCart(); }
-    function closeCart(){ document.getElementById('cartModal').classList.add('hidden'); }
-    function renderCart(){ const items=getCart(); const el=document.getElementById('cartItems'); el.innerHTML=''; if(items.length===0){el.innerHTML='<div class="text-sm text-slate-500">Cart is empty</div>'} else{ items.forEach(it=>{ const row=document.createElement('div'); row.className='flex items-center justify-between py-2 border-b'; row.innerHTML=`<div><div class="font-medium">${it.name}</div><div class="text-xs">₹${it.price} × ${it.qty}</div></div><div>₹${it.price*it.qty}</div>`; el.appendChild(row); }); } document.getElementById('cartTotal').innerText=cartTotal(); }
-
-    // init render
-    renderCart();
-
-    // contact form (front-end only)
-    document.getElementById('contactForm').addEventListener('submit', e=>{ e.preventDefault(); alert('Thanks! We received your message — we will reply at the email provided.'); e.target.reset(); });
-  </script>
+  </section>
 </body>
 </html>
-```
 
----
 
-## How to Deploy for Free (zero budget)
-
-### Option A — GitHub Pages
-
-1. Create a free GitHub account if you don't have one.
-2. Create a new repository named `glowaura-site`.
-3. Add the above `index.html` as the repository root file.
-4. In repo settings → Pages, choose main branch / root and save. After a few minutes your site will be live at `https://<username>.github.io/glowaura-site/`.
-
-### Option B — Netlify
-
-1. Create free Netlify account.
-2. Drag & drop the single `index.html` into Netlify's Sites → New site → Drag and drop.
-3. Netlify will host it and give a free URL.
-
-> **Tip:** Replace placeholder images with your AI-generated mockups (upload to the repo or Netlify site) and update image URLs.
-
----
-
-## Social Media Launch Kit (Instagram + TikTok)
-
-### 1‑line bios
-
-* GlowAura — Candles for your vibe ✨ | Eco | Minimal | India
-* Light your vibe. Glow your aura.
-
-### Caption template (product post)
-
-```
-New drop 🔥 — Moonlit Matcha
-Calm study vibes in a pastel jar. Slow burn + eco packaging. Link in bio. #GlowAura #SustainableCandles
-```
-
-### Reels Script (3x)
-
-1. **Unboxing Reel (15s)**
-
-* Clip 1 (2s): Pastel package on table. Caption: "New drop"
-* Clip 2 (5s): Light candle, close-up of flame. Caption: "Moonlit Matcha — Matcha + Oats"
-* Clip 3 (5s): Cozy scene w/ headphones + candle. Caption: "Study with me vibes"
-* Clip 4 (3s): CTA: "Link in bio — limited stock"
-
-2. **Aesthetic Moodboard (10s)**
-
-* Quick cuts: product, polaroids, notebook, coffee. Overlaid text: "Light your vibe."
-
-3. **How it's made (story style, 30s)**
-
-* Shots of eco packaging, label, pouring wax (even if simulated), showing scent notes. Voiceover: On mission to reduce waste. Buy once, glow often.
-
-### Hashtag bundles
-
-* #GlowAura #AestheticCandles #SustainableLiving #GenZBrand #StudyVibes #HomeAesthetics
-
----
-
-## Sample Policies & FAQ (short)
-
-**Shipping:** Orders ship within 3–5 business days. Local courier, flat ₹49 within India.
-
-**Returns:** Returns accepted within 7 days if product damaged. No returns for used candles.
-
-**FAQ:**
-
-* *How long do candles burn?* ~30 hours for 180g jars.
-* *Are your candles vegan?* Yes, soy wax and vegan fragrance oils.
-* *Do you ship internationally?* Not yet — local India only.
-
----
-
-## Next Steps I can do for you (pick any)
-
-* Generate downloadable ZIP of the website files.
-* Create Canva‑ready social post images and captions.
-* Produce AI images for each product using your preferred free generator.
-* Create a one‑page PDF brand guide for pitching to local stores.
-
----
-
-### Enjoy — Launch checklist (quick)
-
-1. Replace placeholder images with real/AI mockups.
-2. Update contact email & payment instructions.
-3. Host on Netlify/GitHub Pages.
-4. Post 3 Reels within 48 hours of launch.
-
----
-
-*If you want me to produce the ZIP, AI images, or export a PDF brand guide now, tell me which one and I’ll create it.*
