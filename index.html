@@ -1,43 +1,199 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
+  <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>GlowAura Candles</title>
+  <title>GlowAura Candles — Light your vibe</title>
+  <meta name="description" content="GlowAura — Gen-Z aesthetic sustainable candles. Small batch, eco-friendly, mood-focused scents.">
+  <meta name="keywords" content="Glowaura,candles,Gen Z,aesthetic,sustainable,soy candles,India">
+  <meta property="og:title" content="GlowAura Candles — Light your vibe" />
+  <meta property="og:description" content="Eco-friendly scented candles made for your aesthetic. Shop Moonlit Matcha, Lavender Lyric & more." />
+  <meta name="twitter:card" content="summary_large_image" />
   <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --lav:#E8DAFF; --mint:#D8FFF2; --peach:#FFE8D6; --char:#222222; --glow:#FFF6E6;
+    }
+    body{font-family:Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial; background:var(--glow); color:var(--char);}
+    .glow{box-shadow:0 10px 30px rgba(255,230,200,0.18);}
+    .btn{padding:.5rem .9rem; border-radius:10px; font-weight:600;}
+  </style>
 </head>
-
-<body class="bg-[#FFF6E6] text-[#222222]">
-  <header class="p-6 text-center">
-    <h1 class="text-4xl font-bold">GlowAura Candles</h1>
-    <p class="text-lg mt-2">Light your vibe. Glow your aura.</p>
+<body>
+  <header class="max-w-5xl mx-auto p-6 flex items-center justify-between">
+    <div class="flex items-center gap-3">
+      <div class="w-12 h-12 rounded-full bg-white flex items-center justify-center glow">
+        <svg width="26" height="26" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 2c1.1 1.6 2 2.8 2 4 0 1.9-1.5 3.5-3.5 3.5S7 7.9 7 6c0-1.2.9-2.4 2-4 0 0 .7.5 3 0z" fill="#FFD8A8"/><rect x="9" y="8" width="6" height="12" rx="3" fill="#FFF" stroke="#EED"/></svg>
+      </div>
+      <div>
+        <h1 class="text-2xl font-bold" style="font-family:Poppins">GlowAura</h1>
+        <p class="text-xs -mt-1">Light your vibe. Glow your aura.</p>
+      </div>
+    </div>
+    <nav class="hidden md:flex gap-6 items-center">
+      <a href="#products" class="text-sm">Shop</a>
+      <a href="#about" class="text-sm">About</a>
+      <a href="#contact" class="text-sm">Contact</a>
+      <button id="cartBtn" class="btn" style="background:var(--peach)">Cart (<span id="cartCount">0</span>)</button>
+    </nav>
+    <div class="md:hidden">
+      <button id="mobileMenu" aria-label="open menu">☰</button>
+    </div>
   </header>
 
-  <section class="p-6">
-    <h2 class="text-2xl font-semibold mb-4">Our Candles</h2>
-
-    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-
-      <div class="bg-white p-4 rounded-xl shadow">
-        <h3 class="text-xl font-bold">Moonlit Matcha</h3>
-        <p class="text-sm">Smooth green tea + creamy oat milk. Slow burn ~30 hrs.</p>
-        <p class="font-semibold mt-2">₹449</p>
+  <main class="max-w-5xl mx-auto p-6">
+    <!-- Hero -->
+    <section class="grid md:grid-cols-2 gap-6 items-center mb-8">
+      <div>
+        <h2 class="text-4xl font-bold mb-3" style="font-family:Poppins">Candles made for your mood.</h2>
+        <p class="mb-4">Sustainable, Gen-Z aesthetic candles crafted with care. Minimal packaging. Max vibe.</p>
+        <a href="#products" class="inline-block px-6 py-2 bg-[#E8DAFF] rounded font-medium">Shop the Drop</a>
       </div>
-
-      <div class="bg-white p-4 rounded-xl shadow">
-        <h3 class="text-xl font-bold">Peachy Polaroid</h3>
-        <p class="text-sm">Juicy peach + clean cotton. Cozy room freshness.</p>
-        <p class="font-semibold mt-2">₹399</p>
+      <div class="bg-white rounded-lg p-6 glow">
+        <img src="assets/product_1.svg" alt="Moonlit Matcha" class="w-full rounded" />
       </div>
+    </section>
 
-      <div class="bg-white p-4 rounded-xl shadow">
-        <h3 class="text-xl font-bold">Midnight Coconut</h3>
-        <p class="text-sm">Coconut + sea salt. Portable tin vibes.</p>
-        <p class="font-semibold mt-2">₹299</p>
+    <!-- Features -->
+    <section class="grid grid-cols-1 md:grid-cols-3 gap-4 mb-8">
+      <div class="bg-white p-4 rounded glow">
+        <h4 class="font-semibold">Eco Materials</h4>
+        <p class="text-sm mt-2">Soy wax, recycled glass, recyclable packaging.</p>
       </div>
+      <div class="bg-white p-4 rounded glow">
+        <h4 class="font-semibold">Small Batches</h4>
+        <p class="text-sm mt-2">Hand-poured in limited drops for consistency and quality.</p>
+      </div>
+      <div class="bg-white p-4 rounded glow">
+        <h4 class="font-semibold">Aesthetic Ready</h4>
+        <p class="text-sm mt-2">Instagram-friendly packaging and pastel vibes.</p>
+      </div>
+    </section>
 
+    <!-- Products -->
+    <section id="products" class="mb-8">
+      <h3 class="text-2xl font-semibold mb-4">Our Candles</h3>
+      <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6" id="productGrid">
+        <!-- Cards inserted by JS -->
+      </div>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="mt-8 bg-white p-6 rounded glow">
+      <h4 class="text-xl font-semibold">Why GlowAura?</h4>
+      <p class="mt-2">We craft small-batch candles from soy and recycled containers. Minimal waste. Big vibes.</p>
+      <ul class="mt-3 list-disc pl-5">
+        <li>Eco materials</li>
+        <li>Vegan wax</li>
+        <li>Instagram-ready packaging</li>
+      </ul>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="mt-6">
+      <h4 class="text-lg font-semibold">Contact</h4>
+      <p class="text-sm mt-2">Email: hello@glowaura.example (replace with real email)</p>
+      <form id="contactForm" class="mt-3 grid gap-2 sm:grid-cols-2">
+        <input name="name" placeholder="Your name" class="p-2 border rounded" />
+        <input name="email" placeholder="Email" class="p-2 border rounded" />
+        <textarea name="message" placeholder="Message" class="p-2 border rounded sm:col-span-2"></textarea>
+        <button type="submit" class="bg-[#D8FFF2] p-2 rounded sm:col-span-2">Send</button>
+      </form>
+    </section>
+  </main>
+
+  <!-- Cart Modal -->
+  <div id="cartModal" class="fixed inset-0 bg-black/40 hidden items-center justify-center p-4">
+    <div class="bg-white rounded-lg p-4 w-full max-w-lg">
+      <h5 class="font-semibold">Your Cart</h5>
+      <div id="cartItems" class="mt-3"></div>
+      <div class="mt-3 flex items-center justify-between">
+        <div>Total: ₹<span id="cartTotal">0</span></div>
+        <div>
+          <button id="checkout" class="px-3 py-1 bg-[#E8DAFF] rounded">Checkout</button>
+          <button id="closeCart" class="ml-2 px-3 py-1 border rounded">Close</button>
+        </div>
+      </div>
     </div>
-  </section>
+  </div>
+
+  <footer class="max-w-5xl mx-auto p-6 text-center text-sm">
+    © GlowAura — Made with care. Small batches. ✨
+  </footer>
+
+<script>
+  const products = [
+    {id:'GA-MM-180', name:'Moonlit Matcha', price:449, img:'assets/product_1.svg', desc:'Matcha + creamy oats — calming study candle.'},
+    {id:'GA-PP-160', name:'Peachy Polaroid', price:399, img:'assets/product_2.svg', desc:'Juicy peach & cotton — bright mood.'},
+    {id:'GA-MC-120', name:'Midnight Coconut', price:299, img:'assets/product_3.svg', desc:'Coconut + sea salt — portable beach vibe.'},
+    {id:'GA-LL-200', name:'Lavender Lyric', price:499, img:'assets/product_4.svg', desc:'Lavender + eucalyptus — dreamy sleep.'},
+    {id:'GA-CC-180', name:'Cafe Caramel', price:459, img:'assets/product_5.svg', desc:'Espresso + caramel — cozy cafe mood.'},
+    {id:'GA-FW-220', name:'Forest Whisper', price:549, img:'assets/product_6.svg', desc:'Pine + moss — grounding clarity.'}
+  ];
+
+  function createCard(p){
+    const div=document.createElement('div');
+    div.className='bg-white p-4 rounded-xl glow flex flex-col';
+    div.innerHTML = `
+      <img src="${p.img}" alt="${p.name}" class="w-full h-48 object-cover rounded mb-3"/>
+      <div class="flex-1">
+        <h4 class="font-semibold text-lg">${p.name}</h4>
+        <p class="text-sm text-slate-600 mt-1">${p.desc}</p>
+      </div>
+      <div class="mt-3 flex items-center justify-between">
+        <div class="font-semibold">₹${p.price}</div>
+        <div class="flex gap-2">
+          <button class="addBtn px-3 py-1 border rounded" data-id="${p.id}">Add</button>
+          <button class="buyBtn px-3 py-1 bg-[#FFE8D6] rounded" data-id="${p.id}">Buy</button>
+        </div>
+      </div>
+    `;
+    return div;
+  }
+
+  const grid=document.getElementById('productGrid');
+  products.forEach(p=>grid.appendChild(createCard(p)));
+
+  // Cart logic (localStorage)
+  const cartKey='glowaura_cart_v2';
+  function getCart(){return JSON.parse(localStorage.getItem(cartKey)||'[]');}
+  function saveCart(c){localStorage.setItem(cartKey,JSON.stringify(c));}
+  function cartCount(){return getCart().reduce((s,i)=>s+i.qty,0);}
+  function cartTotal(){return getCart().reduce((s,i)=>s+i.qty*i.price,0);}
+  function updateCartUI(){document.getElementById('cartCount').innerText=cartCount();}
+  updateCartUI();
+
+  document.addEventListener('click', (e)=>{
+    if(e.target.matches('.addBtn')){ addToCart(e.target.dataset.id,1); }
+    if(e.target.matches('.buyBtn')){ addToCart(e.target.dataset.id,1); openCart(); }
+    if(e.target.id==='cartBtn') openCart();
+    if(e.target.id==='closeCart') closeCart();
+    if(e.target.id==='checkout') {
+      const items=getCart();
+      if(items.length===0){ alert('Cart empty'); return; }
+      let summary = items.map(i=>`${i.name} x ${i.qty} = ₹${i.price*i.qty}`).join('\\n');
+      summary += `\\nTotal = ₹${cartTotal()}`;
+      alert('Checkout (manual):\\n' + summary + '\\n\\nContact: hello@glowaura.example to complete payment.');
+    }
+  });
+
+  function addToCart(id, qty){
+    const p=products.find(x=>x.id===id);
+    const cart=getCart();
+    const found=cart.find(i=>i.id===id);
+    if(found){found.qty+=qty;} else {cart.push({id:p.id,name:p.name,price:p.price,qty:qty});}
+    saveCart(cart); updateCartUI();
+  }
+
+  function openCart(){ document.getElementById('cartModal').classList.remove('hidden'); renderCart(); }
+  function closeCart(){ document.getElementById('cartModal').classList.add('hidden'); }
+  function renderCart(){ const items=getCart(); const el=document.getElementById('cartItems'); el.innerHTML=''; if(items.length===0){ el.innerHTML='<div class="text-sm text-slate-500">Cart is empty</div>'; } else { items.forEach(it=>{ const row=document.createElement('div'); row.className='flex items-center justify-between py-2 border-b'; row.innerHTML = `<div><div class="font-medium">${it.name}</div><div class="text-xs">₹${it.price} × ${it.qty}</div></div><div>₹${it.price*it.qty}</div>`; el.appendChild(row); }); } document.getElementById('cartTotal').innerText=cartTotal(); }
+
+  // Contact form
+  document.getElementById('contactForm').addEventListener('submit', e=>{ e.preventDefault(); alert('Thanks! We received your message — we will reply at the email provided.'); e.target.reset(); });
+
+</script>
 </body>
 </html>
 
